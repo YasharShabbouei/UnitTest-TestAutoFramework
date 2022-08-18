@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-08-12 11:48:28</p>
+                <p class='attribute'><strong>Duration: </strong>134 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.LoginTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_Login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Log in']"}
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B4D953+2414931]
+	Ordinal0 [0x00ADF5E1+1963489]
+	Ordinal0 [0x009CC6B8+837304]
+	Ordinal0 [0x009F9500+1021184]
+	Ordinal0 [0x009F979B+1021851]
+	Ordinal0 [0x00A26502+1205506]
+	Ordinal0 [0x00A144E4+1131748]
+	Ordinal0 [0x00A24812+1198098]
+	Ordinal0 [0x00A142B6+1131190]
+	Ordinal0 [0x009EE860+976992]
+	Ordinal0 [0x009EF756+980822]
+	GetHandleVerifier [0x00DBCC62+2510274]
+	GetHandleVerifier [0x00DAF760+2455744]
+	GetHandleVerifier [0x00BDEABA+551962]
+	GetHandleVerifier [0x00BDD916+547446]
+	Ordinal0 [0x00AE5F3B+1990459]
+	Ordinal0 [0x00AEA898+2009240]
+	Ordinal0 [0x00AEA985+2009477]
+	Ordinal0 [0x00AF3AD1+2046673]
+	BaseThreadInitThunk [0x763D6739+25]
+	RtlGetFullPathName_UEx [0x77748FEF+1215]
+	RtlGetFullPathName_UEx [0x77748FBD+1165]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\yasha\OneDrive\Desktop\Python test\Unittest_POM\TestCases\LoginTest.py", line 29, in test_Login
+    loginObject.clickLogin()
+  File "C:\/Users//yasha//OneDrive//Desktop//Python test//Unittest_POM\PageObjects\LoginPageElements.py", line 22, in clickLogin
+    self.driver.find_element_by_xpath(self.button_login_xpath).click()
+  File "C:\Users\yasha\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 526, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\yasha\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\yasha\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yasha\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Log in']"}
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B4D953+2414931]
+	Ordinal0 [0x00ADF5E1+1963489]
+	Ordinal0 [0x009CC6B8+837304]
+	Ordinal0 [0x009F9500+1021184]
+	Ordinal0 [0x009F979B+1021851]
+	Ordinal0 [0x00A26502+1205506]
+	Ordinal0 [0x00A144E4+1131748]
+	Ordinal0 [0x00A24812+1198098]
+	Ordinal0 [0x00A142B6+1131190]
+	Ordinal0 [0x009EE860+976992]
+	Ordinal0 [0x009EF756+980822]
+	GetHandleVerifier [0x00DBCC62+2510274]
+	GetHandleVerifier [0x00DAF760+2455744]
+	GetHandleVerifier [0x00BDEABA+551962]
+	GetHandleVerifier [0x00BDD916+547446]
+	Ordinal0 [0x00AE5F3B+1990459]
+	Ordinal0 [0x00AEA898+2009240]
+	Ordinal0 [0x00AEA985+2009477]
+	Ordinal0 [0x00AF3AD1+2046673]
+	BaseThreadInitThunk [0x763D6739+25]
+	RtlGetFullPathName_UEx [0x77748FEF+1215]
+	RtlGetFullPathName_UEx [0x77748FBD+1165]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 134 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

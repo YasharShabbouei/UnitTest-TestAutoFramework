@@ -1,0 +1,10 @@
+{
+    "test1":{
+        "username":"admin@yourstore.com",
+        "password":"admiaadminasd"
+    },
+    "test2":{
+        "username":"admin@yourstore.com",
+        "password":"admin"
+    }
+}
